@@ -1,0 +1,32 @@
+ Previously YAMl was known as "YET ANOTHER MARKUP LANGUAGE". 
+  - Now YAML is named as "YAML AINT MARKUP LANGUAGE".
+  - YAMl is not a programming langugae it is a data format used to exchange data.
+  - It is similar to .xml and .json datatypes.
+  - It is a simple human readable langugae which is used to store data or info about some configurations.
+  - In YAML you can store only data, and not commands.
+  - An object is aa combination of Code + Data.
+
+ DATA SERIALIZATION: 
+   - Languages used to represents are YAML,JSON,XMl.
+   - Serialization: A process of converting data objects into a complex data structures into a stream of bytes/storage.
+   - Deserialization: A process where a stram of bytes/storage is converted into objects.
+
+ Why Learning YAML?
+ When using Kuberntes to create a pod we give a written format on how our pod shoul act or look which we submit to kubernetes in the form on YAML or etc format.
+ 
+ Where can we use YAML?
+  - YAML can be used in config files for Docker, Kubernetes,logs, caches etc.
+
+ What are the Benefits?
+  - Easy & Simple to read.
+  - It has a nice and Strict syntax  (Indentation is imp like Python).
+  - Easliy convertable to .json , .xml etc
+  - Most langugaes uses YAMl.
+  - More Powerful when representing complex data.
+  - Various Tools available eg. Parsers, etc.
+  - Parsing (reading) data is easy.
+
+ How to create a YAML file
+  - Open VsCode or anyother IDE 
+  - Create a new file using ".yaml" or ".yml" in the end.
+

@@ -1,0 +1,52 @@
+# After colon anything written are variables.
+# Variables are of diffrent datatypes.
+# String --> can be written in " " or without it or using ' '.
+
+name: Nitin Gouda
+fruit: "apple"
+job: 'SDE'
+
+# What if we have to write in new lines.
+
+bio: | 
+ hey my name is kunal kushwaha.
+ i am a very nice dude.
+
+# Write a single line in multiple lines
+message: >
+ this will 
+ all be 
+ in one single lines.
+---
+# same as 
+message: this will all be in one single line
+
+number: 5473 #(int)
+marks: 98.76 #(float)
+booleanValue: !!bool No # n, N, false, False, FALSE
+# same for true -> yes, y, Y
+---
+# Specify the type 
+zero: !!int 0
+positivenumber: !!int 45
+negativenumber: !!int -45
+binaryNum: !!int 0b1101
+octalNum: !!int 06574
+hexa: !!int 0x45
+commavalue: !!int +540_000 #540000
+expon numbers: 6.023E56
+---
+# Floating point numbers
+marks: !!float 56.50
+infinites: !!float .inf
+not a num: .nan
+
+# null
+surname: !!null Null # or null or NULL or ~
+# ~ : this will also show null key
+
+# Dates in YAML
+
+date: !!timestamp 2022-01-31 #format: yyyy-mm-dd 
+
+...

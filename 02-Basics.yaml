@@ -1,0 +1,38 @@
+# In Yaml files we can store datatypes like hashmaps and dictionaries.
+# In Yaml we can store Key-Value pair.
+# --> apple is key.
+# -->  "I am a red fruit" is a Value. 
+
+"apple" : "I am a red fruit"
+1: "This is Nitin's roll Number"
+ 
+---
+
+# lists
+
+- apple
+- mango
+- banana
+- Apple
+# Yaml is case sensitive language - ("apple" & "Apple" is different)
+
+# To let YAML know that we are creating diffrent types of documents we use ---
+--- # --> This are used to Seprate Documents.
+# We can only use " --- " 3 dashes.
+
+# Block Style.
+
+cities:
+  - Mumbai  
+  - New Delhi
+  - Amravati
+# We have indented by spaces.
+# We can use Parsers to check the code. http://www.yamllint.com/
+---
+cities: [new delhi, mumbai]
+---
+{ mango: "Yello Fruit", age: 56 }
+# To let YAMl know document has been ended we will use " ... "
+... # --> The End of YAML Files.
+# We can only use " ... " 3 dots.
+
