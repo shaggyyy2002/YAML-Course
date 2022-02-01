@@ -1,0 +1,22 @@
+{
+    "school": [
+      {
+        "name": "A.C Patil College of Engineering",
+        "principal": "XYZ",
+        "students": "ABC"
+      },
+      {
+        "Students": null,
+        "student1": {
+          "name": "Nitin Gouda",
+          "branch": "CSE",
+          "Intrests": "DevOps"
+        },
+        "students2": {
+          "name": "Leena Raut",
+          "branch": "CSE",
+          "Intrests": "Web Development"
+        }
+      }
+    ]
+  }

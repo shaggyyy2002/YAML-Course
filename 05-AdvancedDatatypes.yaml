@@ -1,0 +1,84 @@
+# Creating a Student Type data
+student: !!seq
+ - name
+ - roll_no
+ - branch
+---
+# can also write this also
+student: [name, roll_no, branch]
+---
+# some of the keys in seq will be empty which is known as sparse seq
+sprase seq: 
+ - hey
+ - how
+ - 
+ - null
+ - sup
+---
+# sometimes we have to list something under we can use nested seq
+# Nested Sequence
+- 
+ - mango 
+ - apple
+ - Pineapple
+-
+ - name
+ - roll_no
+ - branch  
+---
+# key value pairs are called maps  !!maps
+
+# Nested mapping: map within a map
+name: Nitin
+role:
+ age: 20
+ job: student
+---
+# Same as 
+name: Nitin
+role: {age: 20, job: student}
+
+# pairs: keys may have duplicate value
+# !!pairs
+pairexample: !!pairs
+ - job: student
+ - job: teacher
+---
+# same as 
+pairexample: !!pairs [job: student, job: teacher] 
+# this will be an array of hash tables
+
+# !!set will allow you to use unique values.
+# nothing can have duplicate values.
+names: !!set 
+ ? Nitin
+ ? Leena
+ # if adding Nitin again we will get an error.
+ #? Nitin 
+---
+# If we want an entire seq as an value we can use dictionaries !!omap
+People: !!omap
+ - Nitin: 
+   name: Nitin Gouda
+   age: 20 
+   height: 782
+ - Leena: 
+   name: Leena Raut
+   age: 21
+   height: 765  
+---
+# Reusing some properties using anchors 
+likings: &likings
+  favfruit: mango
+  dislikes: grapes
+
+person1:
+ name: Nitin Gouda
+ <<: *likings # It will automatically add Liking here
+
+person2: 
+ name: Leena Raut
+ <<: *likings
+ dislikes: oranges # We can also overide the dislikes in likings 
+ 
+ 
