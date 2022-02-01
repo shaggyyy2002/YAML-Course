@@ -1,0 +1,8 @@
+There are Various tools available for checking if YAML files are available or not. 
+ - http://www.yamllint.com/ Yaml CodeChecker
+ - Lens IDE which is mainly used in Kubernetes it creates YAMl basic files automatically. 
+ - Converting .yml file to .json file or .xml file 
+   - https://onlineyamltools.com/convert-yaml-to-xml
+   - https://onlineyamltools.com/convert-yaml-to-json
+
+   

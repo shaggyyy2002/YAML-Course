@@ -1,0 +1,18 @@
+<school>
+  <name>A.C Patil College of Engineering</name>
+  <principal>XYZ</principal>
+  <students>ABC</students>
+</school>
+<school>
+  <Students/>
+  <student1>
+    <name>Nitin Gouda</name>
+    <branch>CSE</branch>
+    <Intrests>DevOps</Intrests>
+  </student1>
+  <students2>
+    <name>Leena Raut</name>
+    <branch>CSE</branch>
+    <Intrests>Web Development</Intrests>
+  </students2>
+</school>
